@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void main(){
+
+    double nota1, nota2, nota3, nota4, media;
+    nota1 = nota2  =  nota3 = nota4 = media = 0; 
+    //inicializando as variáveis
+
+    //Pedir para o usuário digitar as suas notas
+    printf("Informe a sua 1 nota");
+    scanf("%f", nota1);
+
+    printf("Informe a sua 2 nota");
+    scanf("%f", nota2);
+
+    printf("Informe a sua 3 nota");
+    scanf("%f", nota3);
+
+    printf("Informe a sua 4 nota");
+    scanf("%f", nota4);
+
+    //Somar todas as notas e dividir por 4
+    media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+
+    //Verificar se o valor da média é:
+    // maior, igual ou menor do que 7.
+
+    if(media &gt;= 7){
+        printf("Você foi aprovado.");
+    }else{
+        printf("Você foi reprovado.");
+    }
+
+    return 0;
+}
